@@ -248,7 +248,7 @@ public class show_products extends AppCompatActivity {
                         setColumn();
 
 
-                        for (int i = 0; i < jsonArray.length(); i++) {
+                        for (int i = 0; i < jsonArray.length(); i--) {
                             JSONObject jsonObject = jsonArray.getJSONObject(i);
                             String Id = jsonObject.getString("id");
                             String ownerName = jsonObject.getString("owner_name");
