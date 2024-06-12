@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_products_id">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ID -->
+            <TextView
+                android:id="@+id/textViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: "
+                android:textStyle="bold" />
+
+            <!-- District -->
+            <TextView
+                android:id="@+id/textViewDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="District: "
+                android:textStyle="bold" />
+
+            <!-- Tehsil -->
+            <TextView
+                android:id="@+id/textViewTehsil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tehsil: "
+                android:textStyle="bold" />
+
+            <!-- Establishment Name -->
+            <TextView
+                android:id="@+id/textViewEstablishmentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Name: "
+                android:textStyle="bold" />
+
+            <!-- Register Date -->
+            <TextView
+                android:id="@+id/textViewestDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Date: "
+                android:textStyle="bold" />
+
+            <!-- Establishment Address -->
+            <TextView
+                android:id="@+id/textViewEstablishmentAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Address: "
+                android:textStyle="bold" />
+
+            <!-- Establishment Landmark -->
+            <TextView
+                android:id="@+id/textViewEstablishmentLandmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Landmark: "
+                android:textStyle="bold" />
+
+            <!-- Establishment Pincode -->
+            <TextView
+                android:id="@+id/textViewEstablishmentPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Pincode: "
+                android:textStyle="bold" />
+
+            <!-- Establishment Email -->
+            <TextView
+                android:id="@+id/textViewEstablishmentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Email: "
+                android:textStyle="bold" />
+
+            <!-- Establishment Contact -->
+            <TextView
+                android:id="@+id/textViewEstablishmentContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment Contact: "
+                android:textStyle="bold" />
+
+            <!-- Owner Name -->
+            <TextView
+                android:id="@+id/textViewOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Name: "
+                android:textStyle="bold" />
+
+            <!-- Owner Address -->
+            <TextView
+                android:id="@+id/textViewOwnerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Address: "
+                android:textStyle="bold" />
+
+            <!-- Owner Pincode -->
+            <TextView
+                android:id="@+id/textViewOwnerPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Pincode: "
+                android:textStyle="bold" />
+
+            <!-- Owner Email -->
+            <TextView
+                android:id="@+id/textViewOwnerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Email: "
+                android:textStyle="bold" />
+
+            <!-- Owner Contact -->
+            <TextView
+                android:id="@+id/textViewOwnerContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Contact: "
+                android:textStyle="bold" />
+            <!-- Register Date -->
+            <TextView
+                android:id="@+id/textViewRegisterDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Date: "
+                android:textStyle="bold" />
+            <!-- Male -->
+            <TextView
+                android:id="@+id/textViewMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male: "
+                android:textStyle="bold" />
+
+            <!-- Female -->
+            <TextView
+                android:id="@+id/textViewFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female: "
+                android:textStyle="bold" />
+
+            <!-- Other -->
+            <TextView
+                android:id="@+id/textViewOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other: "
+                android:textStyle="bold" />
+
+            <!-- Category Details -->
+            <TextView
+                android:id="@+id/textViewCategoryDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category Details: "
+                android:textStyle="bold" />
+
+            <!-- Photo -->
+            <TextView
+                android:id="@+id/textViewPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo: "
+                android:textStyle="bold" />
+
+            <!-- Owner ID Photo -->
+            <TextView
+                android:id="@+id/textViewOwnerIdPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner ID Photo: "
+                android:textStyle="bold" />
+
+            <!-- Product Photo -->
+            <TextView
+                android:id="@+id/textViewProductPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Photo: "
+                android:textStyle="bold" />
+
+            <!-- Self Declaration -->
+            <TextView
+                android:id="@+id/textViewSelfDeclaration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self Declaration: "
+                android:textStyle="bold" />
+
+            <!-- Pay -->
+            <TextView
+                android:id="@+id/textViewPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay: "
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

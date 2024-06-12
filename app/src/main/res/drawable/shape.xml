@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- Default state background -->
+        <shape>
+            <solid android:color="@color/purple" /> <!-- Button background color in default state -->
+            <corners android:radius="8dp" /> <!-- Adjust the radius to control the amount of curvature -->
+        </shape>
+    </item>
+</selector>

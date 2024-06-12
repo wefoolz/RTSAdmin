@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_products">
+
+    <!-- Title Layout -->
+    <LinearLayout
+        android:id="@+id/linear_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvUserAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Product List"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llUserIdShow"
+        android:layout_marginBottom="10dp">
+
+
+        <!-- Table Layout -->
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/linear_layout_title">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_shape">
+
+                    <!-- Table Header -->
+                    <TableRow>
+
+
+                        <!-- headers -->
+
+                    </TableRow>
+
+                    <!-- Table Rows (User Data) will be added dynamically -->
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- products date wise show -->
+    <LinearLayout
+        android:id="@+id/llUserActionButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_title"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <!-- TextInputLayout for User ID input -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_background"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:padding="10dp" />
+
+        <!-- Accept Button -->
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:layout_marginEnd="8dp"/>
+<!--        <Button-->
+<!--            android:id="@+id/btnShowAll"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Show All"/>-->
+    </LinearLayout>
+
+    <!-- use id for product search -->
+    <LinearLayout
+        android:id="@+id/llUserIdShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llUserActionButtons"
+        android:padding="16dp">
+
+        <!--  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputId2"
+            android:layout_width="0dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Product Id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextId2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  -->
+
+        <Button
+            android:id="@+id/btnShow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Product"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
